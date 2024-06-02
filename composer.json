@@ -1,0 +1,12 @@
+{
+    "name": "serg123/phpiggy",
+    "description": "veb site for learning php",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "src/Framework",
+            "App\\": "src/App"
+        }
+    }
+}
