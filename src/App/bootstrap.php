@@ -6,12 +6,11 @@ declare(strict_types=1);
 require __DIR__ . "/../../vendor/autoload.php";
 
 use Framework\App;
-use App\Controllers\HomeController;
 
-
+use function App\Config\registryRoutes;
 
 $app = new App();
 
-$app->get('/', [HomeController::class, 'home']);
+registryRoutes($app);
 
 return $app;
