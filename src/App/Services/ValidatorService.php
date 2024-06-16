@@ -29,7 +29,7 @@ class ValidatorService
             $formData,
             [
                 'email' => ['required', 'email'],
-                'age' => ['required', 'min:18'],
+                'age' => ['required', 'min:20'],
                 'country' => ['required', 'in:USA,Canada,Mexico'],
                 'socialMediaUrl' => ['required', 'url'],
                 'password' => ['required'],
