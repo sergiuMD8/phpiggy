@@ -51,4 +51,9 @@ class Database
     {
         return $this->connection->lastInsertId();
     }
+
+    public function findaAll()
+    {
+        return $this->stmt->fetchAll();
+    }
 }
